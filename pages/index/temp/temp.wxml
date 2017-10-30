@@ -1,0 +1,18 @@
+<template name="itemp">
+  <view class='s-b' >
+    <view class='shops-l'>
+      <image src="{{img}}"></image>
+    </view>
+    <view class='shops-r'>
+      <view class='shops-r-top'>
+        
+        <text class='shops-r-title'>{{title}}</text> 
+        <view style='display:inline-block'>平均每人<text style='color:red'>{{price}}</text></view>
+        
+      </view>
+      <view class='shops-r-bottom'>
+        <view>月销<text style='color:red'>{{count}}</text>单</view>
+      </view>
+    </view>
+  </view>
+</template>

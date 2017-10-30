@@ -1,0 +1,72 @@
+<!--index.wxml-->
+<import src="temp/temp.wxml" />
+<view class="container">
+  <!--搜索-->
+  <view class='top'>
+    <!--地区-->
+    <!-- <view class='location'>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+        <view class="picker">
+          <image src="../../img/location.png"></image>
+          <text>{{region[0]}} ></text>
+        </view>
+      </picker>
+    </view> -->
+    <!--地区end-->
+    <view class='search'>
+      <view bindtap="search" data-d="{{inputval}}">
+        <image src="{{icon}}"></image>
+      </view>
+      <input type='text' confirm-type="search" placeholder='搜索附近 如(酒店、厕所)' bindconfirm="search" bindinput="getval" />
+
+    </view>
+
+  </view>
+  <!--导航-->
+  <view class='nav-main'>
+    <view class='nav-block'>
+      <swiper indicator-dots="true" indicator-active-color="#118307">
+        <block wx:for="{{icons}}" wx:for-item="i">
+          <swiper-item>
+            <view class='nav-m'>
+              <view class='nav' wx:for="{{i}}" wx:for-item="j">
+                <image src="{{j.icon}}"></image>
+                <text>{{j.title}}</text>
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!--导航end-->
+  <view class='shop'>
+    <view class='shop-top'>
+      <text>-</text>
+      <text>超值美食</text>
+      
+      <text>-</text>
+    </view>
+    <view>
+      <scroll-view scroll-x>
+        <view class='s'>
+          <view wx:for="{{shopst}}" class='sv'>
+            <image src="{{item.img}}" class='scrollimg'></image>
+            <text style='font-size:24rpx'>{{item.title}}</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <view class='shop-foods'>
+      <view style='width：100%;height:60rpx;line-height:60rpx;padding:20rpx;border-bottom:1px solid #ccc'>推荐商家</view>
+      <block wx:for="{{shops}}">
+        <view catchtap='goshop' data-id="{{index}}">
+          <template is="itemp" data="{{...item}}" />
+        </view>
+
+      </block>
+    </view>
+  </view>
+
+</view>

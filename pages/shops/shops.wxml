@@ -1,0 +1,79 @@
+<!--商家页面-->
+<view>
+  <view class='shops'>
+    <view class='shops-top'>
+      <!--商家头信息-->
+      <image src="{{shops.img}}"></image>
+      <view class='shops-play'>
+        <view>
+          <text class='title'>{{shops.title}}</text>
+        </view>
+        <text class='describe'>{{shops.describe}}</text>
+        <view class='song'>
+          <text class='describe'>{{shops.song}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='jian'>
+      <image src="../../img/manjian.png"></image>
+      <text>{{shops.manjian}}</text>
+    </view>
+    <!--商家头信息 end-->
+    <!--商品、评价-->
+    <view class='shops-pj'>
+      <view class='shops-pj-nav'>
+        <text data-id='0' bindtap='switchnav'>商品</text>
+        <text data-id='1' bindtap='switchnav'>评价</text>
+      </view>
+      <view class='shops-pj-nav-left' wx:if="{{ishow}}">
+        <!--显示商家菜详情-->
+        <view class='left-nav'>
+          <view wx:for="{{shops.lefttitle}}">
+            <view class="shops-left-title {{curt == item.id ? 'bg' : ''}}" catchtap="goIndex" data-id="{{item.id}}" data-index="{{index}}">
+              <text class='t'>{{item.lefttitle}}</text>
+            </view>
+          </view>
+        </view>
+        <!--菜类-->
+        <scroll-view scroll-y class='scroll'>
+          <view class='cai'>
+            <!--一句curt来显示不是菜 curt===分类id-->
+            <view wx:for="{{cai[curt]}}" wx:for-item="cai" wx:for-index="caiindex">
+              <!--具体的菜-->
+              <view class='right-cai'>
+                <image src="{{cai.img}}"></image>
+                <view class='middle'>
+                  <text>{{cai.cainame}}</text>
+                  <text class='shou'>月售{{cai.shou}}</text>
+                  <text class='price'>￥{{cai.price}}</text>
+                </view>
+                <!--按钮-->
+                <view class='btn'>
+                  <text class='add' catchtap="minus" data-index="{{caiindex}}" wx:if="{{cai.num===0?false:true}}">-</text>
+                  <text class='cainum' wx:if="{{cai.num===0?false:true}}">{{cai.num}}</text>
+                  <text class='add' catchtap="add" data-index="{{caiindex}}">+</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+        <!--购物车-->
+        <view class='fixed'>
+        <view class='allnum-block'>
+          <image src="../../img/logo.png" class='allnum-log'></image>
+          <text class='allnum' wx:if="{{allnum>0}}">{{allnum}}</text>
+        </view>
+          <view class='allprice'>
+            <text>总价: ￥{{allprice}}</text>
+          </view>
+          <view catchtap="getAllprice" class='getAll' data-allprice="{{allprice}}">
+            <text>去结算</text>
+          </view>
+        </view>
+      </view>
+      <view class='shops-pj-na1-right' wx:if="{{!ishow}}">
+        暂无评价
+      </view>
+    </view>
+  </view>
+</view>

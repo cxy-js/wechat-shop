@@ -1,0 +1,10 @@
+
+  <view class="welcome">
+    <image src="../../img/logo.png"></image>
+    <view class='bottom'>
+      <text class='title'>您生活的小助手</text>
+      <button catchtap="goHome">Welcome New</button>
+    </view>
+  </view>
+
+  <text class='time'>{{time}}s</text>

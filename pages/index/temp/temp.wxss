@@ -1,0 +1,26 @@
+
+.s-b{
+  display:flex;
+  margin:20rpx 0;
+  padding:10rpx 30rpx;
+  background: #fff;
+  
+  box-shadow: 0 0 4rpx rgba(239,239,255,.8)
+}
+.shops-r{
+  font-size:24rpx;
+  margin-left:20rpx
+}
+.shops-r-top{
+  margin-bottom:20rpx;
+  height:60rpx;
+  line-height: 60rpx
+}
+.shops-r-top text{
+  margin:0 6rpx;
+  
+}
+.shops-r-title{
+  font-size:32rpx;
+  font-weight:900
+}

@@ -1,0 +1,18 @@
+<!--pages/search/search.wxml-->
+<view>
+ <view class="searchResult">
+  查询结果：
+ </view>
+ <view wx:for="{{shops}}" class='s'>
+
+  <view>
+    <text class='title'>名称：</text> <text>{{item.title}}</text>
+  </view>
+  <view>
+    <text class='addr'>位置 :</text><text>{{item.address}}</text>
+  </view>
+  <view>
+    
+  </view>
+ </view>
+</view>

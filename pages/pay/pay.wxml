@@ -1,0 +1,23 @@
+<!--pages/pay/pay.wxml-->
+<view>
+
+  <view class='address'>
+    我的收获地址
+  </view>
+  <view class='shop-info'>
+    <view class='shop-title'>
+     <text class='line'></text>
+      <text class='title'>{{title}}</text>
+      <text class='line'></text>
+    </view>
+    <view class='caiinfo'>
+        <text>菜名</text>
+        <text>数量</text>
+         <text>价格</text>
+    </view>
+    <view>
+        <text>当前总价：{{allprice}}</text>
+    </view> 
+  </view>
+
+</view>

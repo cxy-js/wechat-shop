@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/pay/pay",
+    "pages/order/order",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/shops/shops",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#118307",
+    "navigationBarTitleText": "食",
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#000",
+    "backgroundColor": "#fff",
+    "selectedColor": "#118307",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home1.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "img/order.png",
+        "selectedIconPath": "img/order1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/my1.png"
+      }
+    ]
+  }
+}

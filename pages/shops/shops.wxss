@@ -1,0 +1,212 @@
+.shops-top {
+  width: 100%;
+  display: flex;
+  color: #fff;
+  background: #118307;
+  height: 136rpx;
+}
+
+.shops-top image {
+  display: inline-block;
+  width: 160rpx;
+  height: 140rpx;
+  margin-left: 20rpx;
+  padding-bottom: 10rpx;
+  vertical-align: top;
+  box-shadow: 1px 1px 2px #ccc;
+}
+
+.shops-play {
+  display: inline-block;
+  font-size: 24rpx;
+  margin-left: 30rpx;
+}
+
+.shops-play .title {
+  font-size: 32rpx;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.shops-play .describe {
+  color: #f8f8f8;
+}
+
+.song {
+  margin-top: 10rpx;
+  width: 140rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 34rpx;
+  background: #1f00fc;
+  color: #fff;
+}
+
+.jian {
+  width: 100%;
+  margin-top: 30rpx;
+  padding: 0 20rpx;
+}
+
+.jian image {
+  width: 20px;
+  height: 20px;
+  margin-right: 16rpx;
+  vertical-align: middle;
+}
+
+.jian text {
+  font-size: 24rpx;
+}
+
+.shops-pj {
+  margin-top: 20rpx;
+  background: #fff;
+}
+
+.shops-pj-nav {
+  border-bottom: 1px solid #ccc;
+  padding: 10rpx 0;
+}
+
+.shops-pj .shops-pj-nav text {
+  display: inline-block;
+  margin-left: 20rpx;
+}
+
+.b {
+  border: 1px solid #ccc;
+}
+
+.shops-pj-nav-left {
+  width: 100%;
+  
+  display: flex;
+  font-size: 28rpx;
+}
+
+.shops-left-title.bg {
+  background: #fff;
+  border-right: none;
+}
+
+.left-nav {
+  flex: 0;
+}
+.shops-left-title {
+  width: 120rpx;
+  text-align: center;
+  padding: 20rpx 10rpx;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #f5f5f5;
+  margin-right: 10rpx;
+}
+
+.shops-left-title .t {
+  text-align: cenrer;
+}
+.cai {
+  flex: 1;
+}
+.scroll{
+  height:800rpx;
+}
+.right-cai{
+  display:flex;
+  width:100%;
+  justify-content: space-around;
+  align-items: center;
+  padding:10rpx;
+  background-color: #fff;
+  border-bottom:1px solid #f5f5f5
+}
+.right-cai image {
+  width: 60px;
+  height: 60px;
+}
+.right-cai .middle{
+
+  flex:0 0 300rpx;
+}
+.shou {
+  margin-left: 10rpx;
+}
+.price {
+  display: block;
+  color: #f00;
+  font-size:24rpx;
+  margin-top: 10rpx;
+}
+.add{
+  display:inline-block;
+  width:40rpx;
+  height:40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius:50%;
+  background: #118307;
+  color:#fff;
+  margin:0 4rpx
+}
+.btn{
+  display:flex;
+  align-items: center;
+  width:118rpx;
+  justify-content: space-center;
+}
+.cainum{
+  text-align: center;
+}
+
+.fixed{
+  position:fixed;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom:0;
+  width:100%;
+  height:80rpx;
+  background:#000;
+  color:#fff;
+}
+.allnum-block{
+  position:relative;
+  width:100rpx;
+  height:100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius:50%;
+  background:#000;
+  margin:-20rpx 0 0 40rpx;
+}
+.allnum-block .allnum-log{
+ width:30px;
+ height:30px;
+ margin-top:20rpx;
+}
+.allnum-block .allnum{
+  position:absolute;
+  width:30rpx;
+  height:30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  background:#118307;
+  font-size:24rpx;
+  padding:4rpx;
+  border-radius:50%;
+  top:0;
+  left:80rpx;
+
+}
+.allprice{
+  margin-left:20rpx;
+}
+.getAll{
+ flex:0 0 200rpx;
+  height:80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background:#118307;
+}
