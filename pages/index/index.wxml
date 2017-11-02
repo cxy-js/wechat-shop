@@ -42,10 +42,11 @@
   <!--导航end-->
   <view class='shop'>
     <view class='shop-top'>
-      <text>-</text>
+      <!-- <text>-</text>
       <text>超值美食</text>
-      
-      <text>-</text>
+      <text>-</text> -->
+      <view style="font-weight:900">超值美食 1折</view>
+      <text class="day">{{day}}天{{h}}小时{{m}}分{{s}}秒</text>
     </view>
     <view>
       <scroll-view scroll-x>

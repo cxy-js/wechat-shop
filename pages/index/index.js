@@ -32,7 +32,11 @@ Page({
     ],
     inputval: "",
     shopst: [],
-    shops: []
+    shops: [],
+    aday: "",
+    h: "",
+    m: "",
+    s: ""
   },
   // bindRegionChange: function (e) {
   //   console.log(e)
@@ -80,17 +84,40 @@ Page({
       url: '../search/search?data=' + v
     })
   },
+  
+
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+   
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    //倒计时
+    let getTime = () => {
+      let stopDate = +new Date("2018-10-24");//获取截至时间戳(.getTime()==+)
+      let nowDate = +new Date()//获取当前时间戳
+      let dTime = stopDate - nowDate;//计算时间差
+      let s = dTime / 1000;//计算秒
+      let m = s / 60;//计算分钟
+      let h = m / 60;//计算小时
+      let day = h / 24;//计算天
+      this.setData({
+        day: parseInt(day),
+        h: parseInt(h % 24),
+        m: parseInt(m % 60),
+        s: parseInt(s % 60)
+      })
+    }
+    getTime()
+    setInterval(() => {
+      getTime()
+    }, 1000)
   },
 
   /**
