@@ -70,7 +70,7 @@ Page({
       }
     }
     this.setData({
-      allprice: total.toFixed(2),
+      allprice: total,
       allnum: allnum
     });
 
