@@ -59,16 +59,18 @@
         </scroll-view>
         <!--购物车-->
         <view class='fixed'>
-        <view class='allnum-block'>
-          <image src="../../img/logo.png" class='allnum-log'></image>
-          <text class='allnum' wx:if="{{allnum>0}}">{{allnum}}</text>
-        </view>
+          <view class='allnum-block'>
+            <image src="../../img/logo.png" class='allnum-log'></image>
+            <text class='allnum' wx:if="{{allnum>0}}">{{allnum}}</text>
+           
+          </view>
           <view class='allprice'>
             <text>总价: ￥{{allprice}}</text>
           </view>
           <view catchtap="getAllprice" class='getAll' data-allprice="{{allprice}}">
             <text>去结算</text>
           </view>
+          
         </view>
       </view>
       <view class='shops-pj-na1-right' wx:if="{{!ishow}}">

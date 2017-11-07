@@ -6,7 +6,8 @@ Page({
    */
   data: {
     title:"",
-    allprice: 0
+    allprice: 0,
+    cainame:[]
   },
 
   /**
@@ -15,10 +16,13 @@ Page({
   onLoad: function (options) {
     console.log(options)
     let allprice = options.allprice,
-        title = options.title
+        title = options.title,
+        cainame=options.cainame.split(',')
+        console.log(cainame)
     this.setData({
       title: title,
-      allprice: allprice
+      allprice: allprice,
+      cainame:cainame
     })
   },
 

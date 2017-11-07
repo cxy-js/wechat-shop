@@ -1,6 +1,8 @@
 // pages/shops/shops.js
 let data = require("../../libs/foodimg.js")
-
+let cainame = [];//负责传递到去结算页面的菜名数组
+let everyprice = [];//负责传递到去结算页面的价格数组
+let everynum = [];//负责传递到去结算页面的数量数组
 Page({
   data: {
     shops: {},
@@ -10,7 +12,11 @@ Page({
     ishow: 1,
     cai: [],
     allprice: 0,
-    allnum: 0
+    allnum: 0,
+    cainame:[],
+   everynum:[],
+    everyprice:[]
+
   },
   //菜品切换
   goIndex(e) {
@@ -29,10 +35,18 @@ Page({
     let num = cai[curt][index].num;
     num++;
     cai[curt][index].num = num
+    
+    everynum.push(cai[curt][index].num)//点击一次pushprice
+    cainame.push(cai[curt][index].cainame)//点击一次push菜名
+    everyprice.push(cai[curt][index].price)//点击一次pushprice
     this.setData({
-      cai: cai
+      cai: cai,
+      cainame:cainame,
+      everyprice: everyprice,
+      everynum: everynum
     })
     this.getAll()
+    console.log(this.data.cainame)
   },
   //减少商品数量
   minus(e) {
@@ -40,6 +54,7 @@ Page({
     let cai = this.data.cai;
     let curt = this.data.curt;//当前是哪个分类下的菜
     let num = cai[curt][index].num;
+    cainame.splice(cai[curt][index], 1)//点击一次删除菜名
     if (num <= 0) {
       return false;
     }
@@ -47,7 +62,8 @@ Page({
     //重新赋值数量
     cai[curt][index].num = num
     this.setData({
-      cai: cai
+      cai: cai,
+      cainame:cainame
     })
     this.getAll()
   },
@@ -73,7 +89,6 @@ Page({
       allprice: total,
       allnum: allnum
     });
-
   },
   //跳转支付页面
   getAllprice() {
@@ -92,10 +107,9 @@ Page({
       //商品数量不能为0
       this.getAll()
       wx.navigateTo({
-        url: '../pay/pay?allprice=' + allprice + '&title=' + title 
+        url: '../pay/pay?allprice=' + allprice + '&title=' + title + '&cainame=' + cainame + '&everynum=' + everynum + '&everyprice=' + everyprice
       })
     }
-
   },
   onLoad: function (options) {
     let id = options.id;

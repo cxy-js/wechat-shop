@@ -84,8 +84,26 @@ Page({
       url: '../search/search?data=' + v
     })
   },
-  
-
+  //商家默认排序
+  sort1(){
+    this.setData({
+      shops: data.shops
+    })
+  },
+  sort2() {
+    let a= this.data.shops.sort(this.co('count'))
+  this.setData({
+    shops:a
+  })
+  },
+  //商家排序，按销量降序排，从大到小
+  co(c){
+    return function(a, b) {
+      var value1 = a[c];
+      var value2 = b[c];
+      return value2 - value1;//value1-value2:从小到大，value2-value1:从大到小
+    }
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

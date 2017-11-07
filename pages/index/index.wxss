@@ -97,7 +97,6 @@ input{
   color: red
 }
 .shop .shop-top text{
- 
  font-size:28rpx;
  font-weight:600
 }
@@ -122,10 +121,22 @@ input{
   font-size:28rpx
 }
 .shop-foods{
-  
+ background: #f5f5f5
 }
 .shops-l image{
   width:80px;
   height:80px;
   vertical-align: middle
+}
+.sort{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+
+  height:60rpx
+}
+.sort text{
+  font-size:28rpx;
+  margin-right:20rpx;
 }

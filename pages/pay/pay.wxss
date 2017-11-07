@@ -34,9 +34,10 @@
   font-weight:900;
 }
 .caiinfo{
-  display:flex;
-  margin:0 auto;
-  justify-content: space-between;
+  /* display:flex;
+  width:100%;
+  font-size:28rpx;
+  justify-content: space-auound;
   align-items: center;
-  text-align: center
+  text-align: center */
 }

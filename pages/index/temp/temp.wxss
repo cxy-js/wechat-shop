@@ -7,6 +7,7 @@
   
   box-shadow: 0 0 4rpx rgba(239,239,255,.8)
 }
+
 .shops-r{
   font-size:24rpx;
   margin-left:20rpx

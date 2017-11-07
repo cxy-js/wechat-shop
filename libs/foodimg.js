@@ -7,6 +7,7 @@ let shops = [
     "describe": "欢饮光临本店，经济实惠，敬请品尝",
     "manjian": "满25减10",
     "song": "便民专送",
+    "id":0,
     "lefttitle": [
       { "lefttitle": "热面", "id": 0 },
       { "lefttitle": "冷菜", "id": 1 },
@@ -135,6 +136,7 @@ let shops = [
     "describe": "欢饮光临本店，经济实惠，敬请品尝",
     "manjian": "满25减10",
     "song": "便民专送",
+    "id": 1,
     "lefttitle": [
       { "lefttitle": "小炒", "id": 0 },
       { "lefttitle": "米饭", "id": 1 },
@@ -304,6 +306,7 @@ let shops = [
     "describe": "欢饮光临本店，经济实惠，敬请品尝",
     "manjian": "满25减10",
     "song": "便民专送",
+    "id": 2,
     "lefttitle": [
       { "lefttitle": "米饭", "id": 0 },
       { "lefttitle": "小炒", "id": 1 },
@@ -362,6 +365,7 @@ let shops = [
     "describe": "欢饮光临本店，经济实惠，敬请品尝",
     "manjian": "满25减10",
     "song": "便民专送",
+    "id": 3,
     "lefttitle": [
       { "lefttitle": "米饭", "id": 0 },
       { "lefttitle": "小炒", "id": 1 },
@@ -420,6 +424,7 @@ let shops = [
     "describe": "欢饮光临本店，经济实惠，敬请品尝",
     "manjian": "满25减10",
     "song": "便民专送",
+    "id": 4,
     "lefttitle": [
       { "lefttitle": "米饭", "id": 0 },
       { "lefttitle": "小炒", "id": 1 },
@@ -478,6 +483,7 @@ let shops = [
     "describe": "欢饮光临本店，经济实惠，敬请品尝",
     "manjian": "满25减10",
     "song": "便民专送",
+    "id": 5,
     "lefttitle": [
       { "lefttitle": "米饭", "id": 0 },
       { "lefttitle": "小炒", "id": 1 },
@@ -536,6 +542,7 @@ let shops = [
     "describe": "欢饮光临本店，经济实惠，敬请品尝",
     "manjian": "满25减10",
     "song": "便民专送",
+    "id": 6,
     "lefttitle": [
       { "lefttitle": "米饭", "id": 0 },
       { "lefttitle": "小炒", "id": 1 },
@@ -594,6 +601,7 @@ let shops = [
     "describe": "欢饮光临本店，经济实惠，敬请品尝",
     "manjian": "满25减10",
     "song": "便民专送",
+    "id": 7,
     "lefttitle": [
       { "lefttitle": "米饭", "id": 0 },
       { "lefttitle": "小炒", "id": 1 },
